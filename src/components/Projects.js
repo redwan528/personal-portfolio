@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Twitter-Dark-Mode.jpg";
-import projImg2 from "../assets/img/dark mode insta.jpg";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg2 from "../assets/img/4k insta.jpg";
+import projImg3 from "../assets/img/Optimized-rawdah.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,18 +12,21 @@ export const Projects = () => {
   const projects = [
     {
       title: "iOS Twitter Clone",
-      description: "Design & Development",
+      description: "Developed and launched a fully functional Twitter clone iOS application using Swift and Twitter's API, features secure login system that retains user credentials, integrated tweet generation, favoriting, and retweeting capabilities to replicate the authentic Twitter app.",
       imgUrl: projImg1,
+      linkURL: "https://github.com/redwan528/Twitter-Mock-Up"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Instagram Clone",
+      description: "Developed an Instagram clone iOS application with a custom Parse backend, enabling users to post photos, upload profile picture, view a global photos feed, post comments, and stay logged in across restarts.",
       imgUrl: projImg2,
+      linkURL: "https://github.com/redwan528/Parstagram"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Rawdah Institute",
+      description: "Contributing on developing an arabic online course website using React!",
       imgUrl: projImg3,
+      linkURL: "https://github.com/tahmid198/Rawdah_Institute-"
     },
    
   ];
