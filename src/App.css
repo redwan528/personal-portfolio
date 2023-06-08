@@ -256,6 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #969393;
 }
 .banner p {
   color: #B8B8B8;
@@ -265,7 +266,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: white;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -305,11 +306,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .bubble-button {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
   padding: 15px 30px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #2f2d2d;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
   font-size: 1.2rem; 
@@ -317,12 +318,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .bubble-button:hover {
   background-color: #f5f5f5;
+  color: #000;
 }
 
 .bubble-button i {
   margin-left: 5px;
 }
 
+.white-text {
+  color: #c19affee; /* my name color  */
+}
 
 /************ Skills Css ************/
 .skill {
@@ -339,6 +344,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  color: #6c6a6a;
 }
 .skill p {
     color: #B8B8B8;
@@ -374,6 +380,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  color: #6c6a6a;
 }
 .project p {
   color: #B8B8B8;

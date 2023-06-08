@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer"];
+  const toRotate = [ ", Software Engineer."];
   const period = 2000;
 
   useEffect(() => {
@@ -56,19 +56,30 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                <h1>{`Hi! I'm Redwan Khan `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer!" ]'><span className="wrap">{text}</span></span></h1>
+                {/* <h1>{`Hi! I'm Redwan Khan `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer!" ]'><span className="wrap">{text}</span></span></h1> */}
+
+                <h1>  {`Hi! I'm `}
+  <span className="white-text">
+   
+    Redwan Khan
+  </span>
+  <span className="txt-rotate" dataPeriod="1000" data-rotate='["Software Engineer!"]'>
+    <span className="wrap">{text}</span>
+  </span>
+</h1>
+
                   <p>I'm a Software Engineer with expertise in Java FullStack, iOS, and React development. Seeking Software Engineering role to leverage analytical, technical, and programming skills to develop innovative solutions that exceed expectations!</p>
                  
                  
                
-                  <div className="button-box">
-                    <div className="rounded-box">
+                  {/* <div className="button-box">
+                    <div className="rounded-box"> */}
                       <button type="button" className="bubble-button" onClick={sendEmail}>
                         Let’s Connect
                         <i className="fas fa-envelope"></i>
                       </button>
-                    </div>
-                  </div>
+                    {/* </div>
+                  </div> */}
 
 
             
