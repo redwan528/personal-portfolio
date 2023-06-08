@@ -300,6 +300,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+
+
+.bubble-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem; 
+}
+
+.bubble-button:hover {
+  background-color: #f5f5f5;
+}
+
+.bubble-button i {
+  margin-left: 5px;
+}
+
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;

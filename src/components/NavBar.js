@@ -53,9 +53,9 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/redwan-khan23/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/redwan528" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>
