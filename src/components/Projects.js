@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Twitter-Dark-Mode.jpg";
-import projImg2 from "../assets/img/4k insta.jpg";
+import projImg2 from "../assets/img/RememberAppIconColorBackground.png";
 import projImg3 from "../assets/img/Optimized-rawdah.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -17,10 +17,10 @@ export const Projects = () => {
       linkURL: "https://github.com/redwan528/Twitter-Mock-Up"
     },
     {
-      title: "Instagram Clone",
-      description: "Developed an Instagram clone iOS application with a custom Parse backend, enabling users to post photos, upload profile picture, view a global photos feed, post comments, and stay logged in across restarts.",
+      title: "Remember",
+      description: "a fun emoji matching card game! (No data of any kind is collected, shared, or stored)",
       imgUrl: projImg2,
-      linkURL: "https://github.com/redwan528/Parstagram"
+      linkURL: "https://github.com/redwan528/Remember"
     },
     {
       title: "Rawdah Institute",
