@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Twitter-Dark-Mode.jpg";
-import projImg2 from "../assets/img/RememberAppIconColorBackground.";
+import projImg2 from "../assets/img/RememberAppIconColorBackground.png";
 import projImg3 from "../assets/img/Optimized-rawdah.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
