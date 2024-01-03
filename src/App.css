@@ -230,6 +230,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+/* .brand-name {
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+} */
+
+.brand-name {
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+  nav.navbar .navbar-brand {
+    width: auto; /* Allow the brand to take full width on smaller screens */
+    text-align: center; /* Center the brand on smaller screens */
+    margin-right: 10px; /* Add margin to separate the logo and name */
+  }
+
+  .brand-name {
+    margin-left: 0; /* Reset margin on smaller screens */
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -344,7 +370,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
-  color: #6c6a6a;
+  color: rgb(255, 238, 238);
 }
 .skill p {
     color: #B8B8B8;
@@ -380,7 +406,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
-  color: #6c6a6a;
+  color:white;
 }
 .project p {
   color: #B8B8B8;
@@ -449,6 +475,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .proj-imgbx::before {
   content: "";
@@ -495,6 +526,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 /************ Projects Css ************/

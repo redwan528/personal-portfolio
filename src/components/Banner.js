@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ ", Software Engineer."];
+  const toRotate = [ ", iOS Engineer"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,8 +55,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+
                 {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                {/* <h1>{`Hi! I'm Redwan Khan `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer!" ]'><span className="wrap">{text}</span></span></h1> */}
+                {/* <h1>{`Hi! I'm Redwan Khan `} <span className="txt-rotate"  
+                dataPeriod="1000" data-rotate='[ "Software Engineer!" ]'><span 
+                className="wrap">{text}</span></span></h1> */}
 
                 <h1>  {`Hi! I'm `}
   <span className="white-text">
@@ -68,7 +71,10 @@ export const Banner = () => {
   </span>
 </h1>
 
-                  <p>I'm a Software Engineer with expertise in Java FullStack, iOS, and React development. Seeking Software Engineering role to leverage analytical, technical, and programming skills to develop innovative solutions that exceed expectations!</p>
+                  <p>Dedicated iOS Developer with a passion for creating seamless, user friendly mobile experiences. 
+                    Proficient in SwiftUI and UIKit, 
+                   eager to contribute my technical skills and creative 
+                     mindset to a dynamic team, driving innovation .</p>
                  
                  
                
@@ -80,9 +86,6 @@ export const Banner = () => {
                       </button>
                     {/* </div>
                   </div> */}
-
-
-            
 
               </div>}
             </TrackVisibility>

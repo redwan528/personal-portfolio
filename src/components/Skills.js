@@ -10,7 +10,7 @@ import colorSharp from "../assets/img/color-sharp.png"
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
+      
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -35,8 +35,10 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Swift | Xcode | Python | Java | C++ | C# | C | HTML | CSS | JavaScript | React Jira | mySQL Workbench</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <p>Languages: Swift | SwiftUI | UIKit | Core Data | Xcode | Python | Java | C++ | C | HTML | CSS | JavaScript | React</p>
+                        <p>Frameworks / Libraries / Software: SwiftUI | UIKit | Xcode | Git | GitHub | Jira | mySQL Workbench | CI/CD | Jenkins | RESTful API | JSON/XML parsing | Core Data | Alamofire | CocoaPods
+</p>
+                        {/* <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Java</h5>
@@ -53,7 +55,7 @@ export const Skills = () => {
                                 <img src={meter1} alt="Image" />
                                 <h5>React</h5>
                             </div>
-                        </Carousel>
+                        </Carousel> */}
                     </div>
                 </div>
             </div>

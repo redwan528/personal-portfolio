@@ -1,9 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Twitter-Dark-Mode.jpg";
-import projImg2 from "../assets/img/RememberAppIconColorBackground.png";
-import projImg3 from "../assets/img/Optimized-rawdah.png";
+import projImg2 from "../assets/img/RememberIcon2.png";
+import projImg3 from "../assets/img/flix launch screen.png";
+import projImg4 from "../assets/img/instaDarkMode.jpeg";
+import projImg5 from "../assets/img/rawdah_logo_3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import iphoneScreenshot from "../assets/img/ihpone Screenshot.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,7 +14,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "iOS Twitter Clone",
+      title: "Twitter Clone",
       description: "Developed and launched a fully functional Twitter clone iOS application using Swift and Twitter's API, features secure login system that retains user credentials, integrated tweet generation, favoriting, and retweeting capabilities to replicate the authentic Twitter app.",
       imgUrl: projImg1,
       linkURL: "https://github.com/redwan528/Twitter-Mock-Up"
@@ -20,14 +23,30 @@ export const Projects = () => {
       title: "Remember",
       description: "a fun emoji matching card game! (No data of any kind is collected, shared, or stored)",
       imgUrl: projImg2,
-      linkURL: "https://github.com/redwan528/Remember"
+      linkURL: "https://github.com/redwan528/Remember",
+      screenshots: [iphoneScreenshot]
     },
+   
+    {
+      title: "Parstagram",
+      description: "This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.",
+      imgUrl: projImg4,
+      linkURL: "https://github.com/redwan528/Parstagram"
+    }
+    ,
+    {
+      title: "Flix",
+      description: "a movie database app fetching the latest movies in theaters!",
+      imgUrl: projImg3,
+      linkURL: "https://github.com/redwan528/Flix"
+    }
+    ,
     {
       title: "Rawdah Institute",
       description: "Contributing on developing an arabic online course website using React!",
-      imgUrl: projImg3,
+      imgUrl: projImg5,
       linkURL: "https://github.com/tahmid198/Rawdah_Institute-"
-    },
+    }
    
   ];
 
