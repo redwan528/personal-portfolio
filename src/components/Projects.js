@@ -9,6 +9,11 @@ import projImg5 from "../assets/img/rawdah_logo_3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import iphoneScreenshot from "../assets/img/ihpone Screenshot (1).png"
 import flixScreenshot from "../assets/img/flix_screenshot_2-removebg-preview (2).png"
+import flixScreenshot2 from "../assets/img/flix iphone.jpeg"
+import rememberScreenshot from "../assets/img/remember-1708x2336.jpeg"
+import rememberShuffleScreenshot from "../assets/img/leonardo-dicaprio-clapping.gif"
+import rememberShuffleUpscaleScreenshot from "../assets/img/rememberShuffleUpscaled.jpeg"
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -22,13 +27,16 @@ export const Projects = () => {
       linkURL: "https://github.com/redwan528/Twitter-Mock-Up",
       screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
     },
+
+    
     {
       title: "Remember",
-      description: "a fun emoji matching card game! (No data of any kind is collected, shared, or stored)",
+      description: "a fun emoji card matching mobile game!",
       imgUrl: projImg2,
       linkURL: "https://github.com/redwan528/Remember",
-      screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
-    },
+      screenshots: [rememberScreenshot, rememberShuffleScreenshot, rememberShuffleUpscaleScreenshot]
+    }
+    ,
    
     {
       title: "Parstagram",
@@ -43,7 +51,7 @@ export const Projects = () => {
       description: "a movie database app fetching the latest movies in theaters!",
       imgUrl: projImg3,
       linkURL: "https://github.com/redwan528/Flix",
-      screenshots: [flixScreenshot, iphoneScreenshot, iphoneScreenshot]
+      screenshots: [flixScreenshot, flixScreenshot2, iphoneScreenshot]
     }
     ,
     {
