@@ -34,9 +34,16 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
+
+                      <h2>About Me</h2>
+                      <p>Dedicated iOS Developer with a passion for creating seamless, user friendly mobile experiences. 
+                    Proficient in SwiftUI and UIKit, 
+                   eager to contribute my technical skills and creative 
+                     mindset to a dynamic team, driving innovation .</p>
+                     
                         <h2>Skills</h2>
-                        <p>Languages: Swift | SwiftUI | UIKit | Core Data | Xcode | Python | Java | C++ | C | HTML | CSS | JavaScript | React</p>
-                        <p>Frameworks / Libraries / Software: SwiftUI | UIKit | Xcode | Git | GitHub | Jira | mySQL Workbench | CI/CD | Jenkins | RESTful API | JSON/XML parsing | Core Data | Alamofire | CocoaPods
+                        <p>Languages: Swift | Python | Java | C++ | HTML | CSS | JavaScript | React</p>
+                        <p>Frameworks / Libraries / Software: SwiftUI | UIKit | Xcode | Git | GitHub | Jira | mySQL Workbench | Jenkins | RESTful API | JSON/XML parsing | Core Data | Alamofire | CocoaPods | Firebase
 </p>
                         {/* <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">

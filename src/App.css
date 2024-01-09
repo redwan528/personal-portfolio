@@ -572,7 +572,7 @@ height: 600px;
   max-height: 100%; /* Adjust maximum height as needed */
   width: auto; /* Maintain the aspect ratio */
   height: auto; /* Maintain the aspect ratio */
-  object-fit: cover; /* This will ensure the image covers the area without stretching */
+  object-fit: contain; /* This will ensure the image covers the area without stretching */
   border-radius: 25px; /* Match the border-radius */
 }
 
@@ -590,107 +590,189 @@ height: 600px;
   margin-bottom: 10px;
 }
 
-/* Base styles for the entire modal */
-/* Modal Dialog */
-.modal-dialog {
-  max-width: 80vw;
-  margin: auto;
+/* Project Card Styles */
+.proj-card {
+  cursor: pointer;
+  border-radius: 25px;
 }
 
-/* Modal Content */
+.proj-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.proj-txt {
+  padding: 10px;
+}
+
+
+
+
+/* Modal Customization */
+
+.modal-dialog {
+  max-width: 70% !important;
+  margin: auto !important;
+  /* height: -5000000px !important; */
+  transform: translate(0, 40px) !important;
+  
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 95% !important; /* Adjust width for smaller screens */
+    /* margin-top: 10px !important;
+    margin-bottom: 10px !important; */
+    /* Optional: Control the height of the modal on mobile */
+    /* height: auto !important; */
+    /* max-height: 80vh !important; */ /* Adjust as needed */
+    transform: translate(0, 50px) !important; /* Adjust translation if necessary */
+    height: 40% !important;
+  }
+}
+
 .modal-content {
-  background-color: #2C2F33;
-  color: white;
-  border-radius: 30px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1050;
+  background-color: #2C2F33 !important; /* Discord grey color */
+  color: white !important; /* Ensuring text is visible on the dark background */
+  border-radius: 10px; /* Optional: rounded corners for the modal */
+    overflow: hidden; /* Prevent content from spilling outside the modal */
+    justify-content: center !important;
+}
+
+/* If you have buttons or other elements, you might want to adjust their styles too */
+.modal-button {
+  background-color: #5865F2 !important; /* Discord's blurple color for buttons, as an example */
+  color: white !important;
 }
 
 /* Modal Header */
 .modal-header {
-  background-color: #2C2F33;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-bottom: none !important;
 }
 
-/* Modal Title */
-.modal-title {
-  text-align: center;
-}
-
-/* Modal Body */
-.modal-body-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-  padding: 0;
-}
-
-/* List Styles */
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-/* Carousel Customizations */
-.carousel-indicators {
-margin-bottom: -50px !important
-}
-
-.carousel-indicators {
-  position: static; /* Reset any absolute positioning */
-  text-align: center; /* Center-align the indicators */
-  margin-top: 20px; /* Space between the images and the indicators */
-}
-
-/* Ensure that the indicators are list items displayed inline */
-.carousel-indicators li {
-  display: inline-block;
-  margin: 0 5px; /* Spacing between indicators */
-}
-
-/* Active indicator customization */
-.carousel-indicators .active {
-  background-color: #fff; /* Color of the active indicator */
-}
-
-/* Optional: Styles for the carousel container */
-.carousel-container {
-  
-  width: 100% !important; /* Full width of the modal */
-  
-}
-
-/* Styles for images in the carousel */
-.carousel-item img {
-max-width: 100% !important;
-  height: auto !important; /* Maintain aspect ratio */
-  object-fit: contain !important;
-
-
-
-}
-
-/* makes modal wider, but crops images in carosuel*/
-.modal-dialog{
-  z-index: 10050 !important; /* Ensures modal dialog is above other elements */
-  max-width: auto !important; /* Limit the width on larger screens */
-  margin: auto; /* Center the modal */
-  height: fit-content !important; 
-  width: fit-content !important;
-}
-
-/* this does nothing 
-.modal-content {
-  height: fit-content !important; 
-  width: fit-content !important;
+/* .modal-title {
+  font-size: 2rem !important;
+  padding-left: 35% !important;
 } */
 
 
+
+/* Modal Body */
+.modal-body {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  padding: 20px !important;
+}
+
+.carousel-container {
+  width: 10% !important;
+}
+
+
+.carousel-item {
+  display:flex !important; 
+  justify-content: center !important;
+  /* align-items: center !important;
+  width: 100% !important; /* Full width to prevent horizontal shifting */
+  height: 100% !important; /* Full height to match the container */
+
+}
+
+
+
+
+.carousel-item img{
+  max-width: 100% !important;
+  /* max-height: 100% !important; */
+  object-fit:contain !important;
+  height: 550px !important;
+
+}
+
+
+
+/* Styles for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px; /* Smaller height for smaller screens */
+  }
+
+  .modal-body-flex {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .carousel-container {
+    order: 1; /* Carousel images on top */
+    padding-right: 0; /* Adjust padding as needed */
+  }
+
+  .modal-text {
+    order: 2; /* Description at the bottom */
+    padding-top: 20px; /* Space between carousel and text */
+  }
+
+  .modal-content {
+    max-width: 95%; /* Adjust the modal width on smaller screens */
+    margin: auto; /* Center the modal */
+  }
+}
+
+/* Modal Text Section */
+.modal-text {
+  flex-grow: 1 !important;
+  padding-left: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  max-width: 100% !important; /* Ensure it doesn't overflow its container */
+  overflow-wrap: break-word !important; /* Break long words to the next line */
+}
+
+.modal-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-text ul li {
+  padding: 5px 0;
+}
+
+.modal-text p {
+  line-height: 1.6 !important; /* Example line height, adjust as needed */
+  max-width: 500px !important; /* Maximum width of the paragraph */
+  overflow-wrap: break-word !important; /* Ensures long words break to the next line */
+}
+
+.modal-text span {
+  font-size: 2.5rem !important;
+  padding-bottom: 10%;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-text {
+    padding: 10px; /* Less padding on smaller screens */
+    font-size: 0.9em; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-text {
+    padding: 5px; /* Even less padding for very small screens */
+    font-size: 0.8em; /* Even smaller font size */
+  }
+}
 
 
 
