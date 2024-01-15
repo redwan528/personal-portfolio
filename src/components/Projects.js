@@ -8,59 +8,90 @@ import projImg4 from "../assets/img/instaDarkMode.jpeg";
 import projImg5 from "../assets/img/rawdah_logo_3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import iphoneScreenshot from "../assets/img/ihpone Screenshot (1).png"
-import flixScreenshot from "../assets/img/flix_screenshot_2-removebg-preview (2).png"
+import flixScreenshot from "../assets/img/flix_screenshot_2-removebg-HD.png"
 import flixScreenshot2 from "../assets/img/flix iphone.jpeg"
 import rememberScreenshot from "../assets/img/remember-1708x2336.jpeg"
-import rememberShuffleScreenshot from "../assets/img/leonardo-dicaprio-clapping.gif"
+import rememberShuffleScreenshot from "../assets/img/rememberShuffle (1).png"
 import rememberShuffleUpscaleScreenshot from "../assets/img/rememberShuffleUpscaled.jpeg"
-
+import rememberMatch from "../assets/img/rememberCardsScoreMatch.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
-    {
-      title: "Twitter Clone",
-      shortDescription: "twitter ios clone",
-      longDescription: "Developed and launched a fully functional Twitter clone iOS application using Swift and Twitter's API, features secure login system that retains user credentials, integrated tweet generation, favoriting, and retweeting capabilities to replicate the authentic Twitter app.",
-      imgUrl: projImg1,
-      linkURL: "https://github.com/redwan528/Twitter-Mock-Up",
-      screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
-    },
+    // {
+    //   title: "Twitter Clone",
+    //   shortDescription: "twitter ios clone",
+    //   longDescription: "Developed and launched a fully functional Twitter clone iOS application using Swift and Twitter's API, features secure login system that retains user credentials, integrated tweet generation, favoriting, and retweeting capabilities to replicate the authentic Twitter app.",
+    //   imgUrl: projImg1,
+    //   linkURL: "https://github.com/redwan528/Twitter-Mock-Up",
+    //   screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
+    // },
 
     
     {
       title: "Remember",
-      longDescription: "Built a card game app from scratch using Swift and framework SwiftUI, utilizing MVVM (Model-View-ViewModel) architectural pattern for robust and maintainable code structure. The game presents an intuitive interface where users initiate play with a tableau of cards facedown, invoking strategic thinking as they flip one card at a time to unveil and match pairs in the least number of moves.",
-      imgUrl: projImg2,
+      shortDescription: (<span>An emoji matching card game built from scratch, with multiple emoji themes</span>),
+      longDescription: (
+        <>
+          <p>Built a card game app from scratch using Swift and framework SwiftUI, utilizing MVVM (Model-View-ViewModel) architectural pattern for robust and maintainable code structure.</p>
+          <p>The game presents an intuitive interface where users initiate play with a tableau of cards facedown, invoking strategic thinking as they flip one card at a time to unveil and match pairs in the least number of moves.</p>
+        </>
+      ), 
+           imgUrl: projImg2,
       linkURL: "https://github.com/redwan528/Remember",
-      screenshots: [rememberScreenshot, rememberShuffleScreenshot, rememberShuffleUpscaleScreenshot]
+      screenshots: [rememberScreenshot, rememberShuffleScreenshot, rememberMatch],
+      techStack: ( 
+        <ul>  
+      <li>Swift</li> 
+      <li>SwiftUI</li>
+      <li>MVVM</li>
+      </ul> 
+      )
+      
     }
-    ,
+    // ,
    
-    {
-      title: "Parstagram",
-      longDescription: "This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.",
-      imgUrl: projImg4,
-      linkURL: "https://github.com/redwan528/Parstagram",
-      screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
-    }
+    // {
+    //   title: "Parstagram",
+    //   longDescription: "This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.",
+    //   imgUrl: projImg4,
+    //   linkURL: "https://github.com/redwan528/Parstagram",
+    //   screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
+    // }
     ,
     {
       title: "Flix",
-      longDescription: "a movie database app fetching the latest movies in theaters!",
+      shortDescription: "A movie database app fetching the latest movies in theaters!",
+      longDescription:  "A movie database app fetching the latest movies in theaters!",
       imgUrl: projImg3,
       linkURL: "https://github.com/redwan528/Flix",
-      screenshots: [flixScreenshot, flixScreenshot2, iphoneScreenshot]
+      screenshots: [flixScreenshot, flixScreenshot2],
+      techStack: ( <ul> 
+      <li>Swift</li>
+      <li>UIKit</li>
+      <li>Alamofire</li>
+      <li>CocoaPods</li>
+      </ul>
+      )
     }
     ,
     {
       title: "Rawdah Institute",
-      longDescription: "Contributing on developing an arabic online course website using React!",
+      shortDescription:"An online Arabic class website where users can sign up for Beginner, Intermediate, and Advanced Arabic courses! (In Development)" ,
+      longDescription: "An online Arabic class website where users can sign up for Beginner, Intermediate, and Advanced Arabic courses! (In Development)",
       imgUrl: projImg5,
       linkURL: "https://github.com/tahmid198/Rawdah_Institute-",
-      screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
+      // screenshots: [iphoneScreenshot, iphoneScreenshot, iphoneScreenshot]
+      techStack: (
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React </li>
+
+        </ul>
+      )
     }
    
   ];
@@ -74,7 +105,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Check out my latest projects!</p>
+                <p>Check out my latest projects, more upcoming soon!</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     {/* <Nav.Item>

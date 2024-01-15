@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ ", iOS Engineer"];
+  const toRotate = [ ", iOS Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -71,10 +71,7 @@ export const Banner = () => {
   </span>
 </h1>
 
-                  <p>Dedicated iOS Developer with a passion for creating seamless, user friendly mobile experiences. 
-                    Proficient in SwiftUI and UIKit, 
-                   eager to contribute my technical skills and creative 
-                     mindset to a dynamic team, driving innovation .</p>
+                  <p> "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle." - Steve Jobs </p>
                  
                  
                

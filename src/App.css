@@ -352,7 +352,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .white-text {
-  color: #c19affee; /* my name color  */
+  color: #AE81A1; /* my name color  */
+  
+  
 }
 
 /************ Skills Css ************/
@@ -367,27 +369,131 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
-.skill h2 {
+.aboutMeTitle {
+  font-size: 45px;
+	font-weight: 700;
+  color: #AE81A1;
+  /* color: rgb(110, 110, 237); */
+
+  padding-bottom: 3%;
+}
+.myTechStack {
 	font-size: 45px;
 	font-weight: 700;
-  color: rgb(255, 238, 238);
+  /* color: rgb(110, 110, 237); */
+  /* color: #c19affee;  */
+  color: #AE81A1;
+
+
+  padding-bottom: 3%;
 }
-.skill p {
+.aboutMe {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 14px 200px 120px 200px;
+    padding-top: 3%;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+
+.languagesTitle {
+  color: #ffffff; 
+
+  font-weight: bold; /* Make text bold */
+
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+.languages {
+  color: #B8B8B8;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 5px 200px 5px 200px;
+  padding-bottom: 3%;
+
 }
+
+.languagesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  gap: 10px; /* Adjust the space between items */
+  text-align: center; /* Center-align the text within each language item */
+}
+
+
+
+.frameworksContainer, .ToolsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.frameworks, .ToolsAndServices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  gap: 10px; /* Adjust the space between items */
+  text-align: left; /* Center-align the text within each framework item */
+  /* align-items: center; */
+
+
+}
+
+.ToolsAndServices {
+  max-width: 250px;
+
+}
+
+
+
+
+
+.frameworksTitle, .ToolsTitle{
+  padding-top: 2%;
+
+  color: #ffffff;
+
+  font-weight: bold; /* Make text bold */
+
+}
+
+.frameworks, .ToolsAndServices {
+  color: #B8B8B8;
+
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  /* margin: 2px 200px 75px 200px; */
+  width: fit-content;
+
+}
+
+
+
+
+@media (max-width: 768px) { 
+  .skill p {
+  margin: 14px 0px 75px 0px;
+  }
+
+}
+
+@media (max-width: 1024px) { 
+  .skill p {
+  margin: 14px 0px 75px 0px;
+  }
+
+}
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -396,7 +502,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+.profilePic{
+  width: 25%;
+}
+
+@media (max-width: 768px) { 
+
+  .profilePic{
+    width: 50%;
+
+  }
+
+
+}
+
+/* Parent container styling */
+.parent-skill-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly around the items */
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+}
+
+
+.languagesContainer, .frameworksContainer, .ToolsContainer {
+  flex: 1; /* Each container will take equal space */
+  padding: 10px; /* Add some padding around each container */
+  min-width: 300px; /* Set a minimum
+}
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+  .parent-skill-container {
+      flex-direction: column;
+  }
+}
+
+
+
+  
+  /************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
@@ -611,6 +755,55 @@ height: 600px;
 }
 
 
+/* .proj-hover-text {
+  font-size: 40px;
+  font-weight:700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255); 
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; 
+  z-index: 2 !important;
+}
+
+.proj-card:hover .proj-hover-text {
+  opacity: 1;
+}
+.proj-card:hover .proj-imgbx,
+.proj-card:hover .proj-txt {
+  opacity: 0.5; 
+} */
+
+
+.tech-stack {
+  margin-top: 20px; /* Space above the tech stack list */
+  padding: 10px;
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+  border-radius: 8px; /* Rounded corners */
+  text-align: left; /* Center the text */
+margin: auto;
+padding-top: 15%;
+}
+
+.tech-stack ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.tech-stack li {
+  color: #fff; /* White text color */
+  font-size: 16px; /* Adjust the font size */
+  padding: 5px 0; /* Space between each tech stack item */
+}
+
+
+
+
+
 
 
 /* Modal Customization */
@@ -713,10 +906,19 @@ height: 600px;
     padding-right: 0; /* Adjust padding as needed */
   }
 
+  /* .modal-text {
+    order: 2; 
+    padding-top: 20px;
+  } */
+
   .modal-text {
-    order: 2; /* Description at the bottom */
-    padding-top: 20px; /* Space between carousel and text */
+    display: flex !important;
+    flex-direction: column!important;
+    justify-content: flex-start!important; /* Align children to the start */
+    align-items: start!important; /* Align items to the start horizontally */
+    /* Other styles... */
   }
+  
 
   .modal-content {
     max-width: 95%; /* Adjust the modal width on smaller screens */
@@ -746,15 +948,50 @@ height: 600px;
 
 .modal-text p {
   line-height: 1.6 !important; /* Example line height, adjust as needed */
-  max-width: 500px !important; /* Maximum width of the paragraph */
+  max-width: 700px !important; /* Maximum width of the paragraph */
   overflow-wrap: break-word !important; /* Ensures long words break to the next line */
+  padding-top: 5% !important;
+  font-size: medium;
 }
 
-.modal-text span {
+/*projectTitle*/
+/* .modal-text span { 
   font-size: 2.5rem !important;
   padding-bottom: 10%;
 
+} */
+
+
+.title-and-link {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute space between items */
+  gap: 10px; /* Space between the title and the link */
+  width: 100%; /* Ensure it takes full width */
+  
 }
+
+.projectTitle {
+  font-size: 2.5rem !important;
+  padding-bottom: 0%  !important;
+}
+
+.projectLink {
+  /* Styles for the link */
+  text-decoration: none; /* Example: Remove underline from link */
+  color: blue; /* Example: Color of the link */
+}
+
+/* Add responsive adjustments as needed */
+@media (max-width: 768px) {
+  .title-and-link {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -768,6 +1005,29 @@ height: 600px;
   .modal-text {
     padding: 5px; /* Even less padding for very small screens */
     font-size: 0.8em; /* Even smaller font size */
+  }
+}
+
+.projectLink img {
+  width: 30px; /* Adjust the initial width as needed */
+  height: auto; /* Keeps the aspect ratio intact */
+  /* Additional styles if needed */
+  padding-right: 10% !important;
+
+}
+
+/* Adjustments for medium screens, e.g., tablets */
+@media (max-width: 768px) {
+  .projectLink img {
+    width: 25px; /* Slightly smaller on medium screens */
+  }
+}
+
+/* Adjustments for smaller screens, e.g., mobile phones */
+@media (max-width: 480px) {
+  .projectLink img {
+    width: 20px; /* Even smaller on small screens */
+    padding-right: 4% !important;
   }
 }
 

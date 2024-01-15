@@ -1,11 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import portfolioPic from "../assets/img/Ellipse_71_5-transformed.png"
 
 export const Skills = () => {
   const responsive = {
@@ -35,34 +30,58 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
 
-                      <h2>About Me</h2>
-                      <p>Dedicated iOS Developer with a passion for creating seamless, user friendly mobile experiences. 
-                    Proficient in SwiftUI and UIKit, 
-                   eager to contribute my technical skills and creative 
-                     mindset to a dynamic team, driving innovation .</p>
+                      <h2 className="aboutMeTitle">About Me</h2>
+                      <img className="profilePic" src={portfolioPic} alt="Image" />
+                      <p className="aboutMe"> I'm an enthusiastic and detail-oriented aspiring Junior iOS Developer
+                       with two years of hands-on experience with Swift, UIKit, and SwiftUI. 
+                        Seeking to leverage my skills in a challenging role to create user-friendly iOS applications.
+                        </p>
+
+                    
                      
-                        <h2>Skills</h2>
-                        <p>Languages: Swift | Python | Java | C++ | HTML | CSS | JavaScript | React</p>
-                        <p>Frameworks / Libraries / Software: SwiftUI | UIKit | Xcode | Git | GitHub | Jira | mySQL Workbench | Jenkins | RESTful API | JSON/XML parsing | Core Data | Alamofire | CocoaPods | Firebase
-</p>
-                        {/* <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Java</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Spring Boot</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>iOS Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>React</h5>
-                            </div>
-                        </Carousel> */}
+                        <h2 className="myTechStack">My Tech Stack</h2>
+
+  
+
+<div className='parent-skill-container'>
+
+<div class="languagesContainer">
+    <h2 class="languagesTitle">Languages</h2>
+    <div class="languages">
+        <div>Swift</div>
+        <div>Python</div>
+        <div>Java</div>
+        <div>C++</div>
+        <div>JavaScript</div>
+        <div>React</div>
+    </div>
+</div>
+                     
+<div class="frameworksContainer">
+    <h2 class="frameworksTitle">Frameworks & Libraries</h2>
+    <div class="frameworks">
+        <div>SwiftUI</div>
+        <div>UIKit</div>
+        <div>Core Data</div>
+        <div>Alamofire</div>
+
+        </div>  
+    </div>
+
+    <div class="ToolsContainer">
+    <h2 class="ToolsTitle">Tools & Services</h2>
+    <div class="ToolsAndServices">
+        <div>Xcode</div>
+        <div>CocoaPods</div>
+        <div>mySQL Workbench</div>
+        <div>Firebase</div>
+        </div>
+        </div>
+</div>
+
+
+                 
+
                     </div>
                 </div>
             </div>
