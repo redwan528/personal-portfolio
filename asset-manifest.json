@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.b6ad6295.css",
-    "main.js": "/personal-portfolio/static/js/main.d9ab01eb.js",
+    "main.css": "/personal-portfolio/static/css/main.664b212d.css",
+    "main.js": "/personal-portfolio/static/js/main.64e7d106.js",
     "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/flix iphone.jpeg": "/personal-portfolio/static/media/flix iphone.3b8a4340dfccffa30023.jpeg",
     "static/media/ihpone Screenshot (1).png": "/personal-portfolio/static/media/ihpone Screenshot (1).883ec9066fd93fc03c9c.png",
@@ -34,12 +34,12 @@
     "static/media/github-mark-white.svg": "/personal-portfolio/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/personal-portfolio/index.html",
     "static/media/nav-icon1.svg": "/personal-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.b6ad6295.css.map": "/personal-portfolio/static/css/main.b6ad6295.css.map",
-    "main.d9ab01eb.js.map": "/personal-portfolio/static/js/main.d9ab01eb.js.map",
+    "main.664b212d.css.map": "/personal-portfolio/static/css/main.664b212d.css.map",
+    "main.64e7d106.js.map": "/personal-portfolio/static/js/main.64e7d106.js.map",
     "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ad6295.css",
-    "static/js/main.d9ab01eb.js"
+    "static/css/main.664b212d.css",
+    "static/js/main.64e7d106.js"
   ]
 }
