@@ -32,11 +32,18 @@ export const Projects = () => {
     
     {
       title: "Remember",
-      shortDescription: (<span>An emoji matching card game built from scratch, with multiple emoji themes</span>),
+      shortDescription: (
+      <>
+      <span>An emoji matching card game built from scratch, with multiple emoji themes</span> 
+      <span> (No Data of any kind collected) </span>     
+      </>       
+
+      ),
       longDescription: (
         <>
           <p>Built a card game app from scratch using Swift and framework SwiftUI, utilizing MVVM (Model-View-ViewModel) architectural pattern for robust and maintainable code structure.</p>
           <p>The game presents an intuitive interface where users initiate play with a tableau of cards facedown, invoking strategic thinking as they flip one card at a time to unveil and match pairs in the least number of moves.</p>
+       <p> No Data of any kind collected </p>
         </>
       ), 
            imgUrl: projImg2,
