@@ -230,11 +230,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/* .brand-name {
-  margin-left: 10px;
-  font-size: 30px;
-  color: white;
-} */
 
 .brand-name {
   margin-left: 10px;
@@ -754,31 +749,6 @@ height: 600px;
   padding: 10px;
 }
 
-
-/* .proj-hover-text {
-  font-size: 40px;
-  font-weight:700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255); 
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; 
-  z-index: 2 !important;
-}
-
-.proj-card:hover .proj-hover-text {
-  opacity: 1;
-}
-.proj-card:hover .proj-imgbx,
-.proj-card:hover .proj-txt {
-  opacity: 0.5; 
-} */
-
-
 .tech-stack {
   margin-top: 20px; /* Space above the tech stack list */
   padding: 10px;
@@ -800,12 +770,6 @@ padding-top: 15%;
   padding: 5px 0; /* Space between each tech stack item */
 }
 
-
-
-
-
-
-
 /* Modal Customization */
 
 .modal-dialog {
@@ -813,25 +777,62 @@ padding-top: 15%;
   margin: auto !important;
   /* height: -5000000px !important; */
   transform: translate(0, 40px) !important;
-  
-
 
 }
 
+@media (max-width: 768px) {
+  /* Hide the original title-and-link */
+  .modal-body .title-and-link {
+    display: none;
+  }
+
+  /* Style for title-and-link in the modal header */
+  .modal-header .title-and-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 768px) {
   .modal-dialog {
     max-width: 95% !important; /* Adjust width for smaller screens */
-    /* margin-top: 10px !important;
-    margin-bottom: 10px !important; */
-    /* Optional: Control the height of the modal on mobile */
-    /* height: auto !important; */
-    /* max-height: 80vh !important; */ /* Adjust as needed */
     transform: translate(0, 50px) !important; /* Adjust translation if necessary */
     height: 40% !important;
   }
+
+
+  .modal-content {
+    max-width: 95% !important;
+    margin: auto !important;
+  }
+
+  .modal-body {
+    flex-direction: column !important;
+  }
+ .modal-header {
+    order: 0 !important; 
+  }
+  .title-and-link {
+    order: 0 !important; /* Title and link at the top */
+  }
+
+  .carousel-container {
+    order: 1 !important; /* Carousel below title and link */
+  }
+
+  .modal-text {
+    order: 2 !important; /* Description text below carousel */
+    padding-top: 20px !important;
+  }
+
+ 
+
 }
+
 
 .modal-content {
   background-color: #2C2F33 !important; /* Discord grey color */
@@ -851,13 +852,6 @@ padding-top: 15%;
 .modal-header {
   border-bottom: none !important;
 }
-
-/* .modal-title {
-  font-size: 2rem !important;
-  padding-left: 35% !important;
-} */
-
-
 
 /* Modal Body */
 .modal-body {
@@ -953,14 +947,6 @@ padding-top: 15%;
   padding-top: 5% !important;
   font-size: medium;
 }
-
-/*projectTitle*/
-/* .modal-text span { 
-  font-size: 2.5rem !important;
-  padding-bottom: 10%;
-
-} */
-
 
 .title-and-link {
   display: flex; /* Enables flexbox layout */
