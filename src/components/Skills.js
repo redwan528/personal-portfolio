@@ -1,6 +1,6 @@
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
-import portfolioPic from "../assets/img/Ellipse_71_5-transformed.png"
+import portfolioPic from "../assets/img/circleLinkedinPic.png"
 
 export const Skills = () => {
   const responsive = {
