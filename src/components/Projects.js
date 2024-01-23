@@ -7,9 +7,8 @@ import projImg5 from "../assets/img/rawdah_logo_3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import flixScreenshot from "../assets/img/flix_screenshot_2-removebg-HD.png"
 import flixScreenshot2 from "../assets/img/flix iphone.jpeg"
-import rememberScreenshot from "../assets/img/remember-1708x2336.jpeg"
-import rememberShuffleScreenshot from "../assets/img/rememberShuffle (1).png"
-import rememberMatch from "../assets/img/rememberCardsScoreMatch.png";
+import youWinScreenshot from "../assets/img/youWin.jpeg"
+import rememberCardGameplayGif from "../assets/img/RememberCardGameplay.gif"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -35,7 +34,7 @@ export const Projects = () => {
       ), 
            imgUrl: projImg2,
       linkURL: "https://github.com/redwan528/Remember",
-      screenshots: [rememberScreenshot, rememberShuffleScreenshot, rememberMatch],
+      screenshots: [rememberCardGameplayGif, youWinScreenshot],
       techStack: ( 
         <ul>  
       <li>Swift</li> 

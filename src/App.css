@@ -900,11 +900,6 @@ padding-top: 15%;
     padding-right: 0; /* Adjust padding as needed */
   }
 
-  /* .modal-text {
-    order: 2; 
-    padding-top: 20px;
-  } */
-
   .modal-text {
     display: flex !important;
     flex-direction: column!important;
@@ -953,7 +948,8 @@ padding-top: 15%;
   align-items: center; /* Align items vertically in the center */
   justify-content: space-between; /* Distribute space between items */
   gap: 10px; /* Space between the title and the link */
-  width: 100%; /* Ensure it takes full width */
+  width: 95%; /* Ensure it takes full width */
+  padding-left: 25%;
   
 }
 

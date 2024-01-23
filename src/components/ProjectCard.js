@@ -51,7 +51,7 @@ export const ProjectCard = ({ title, imgUrl, linkURL, screenshots, longDescripti
         <Modal.Body className='modal-body'>
           <div className='carousel-container'>
             {screenshots && screenshots.length > 0 && (
-              <Carousel interval={2000} fade='true' slide={true}>
+              <Carousel interval={null} fade='true' slide={false}>
                 {screenshots.map((screenshot, index) => (
                   <Carousel.Item key={index}>
                     <img
